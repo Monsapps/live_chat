@@ -1,0 +1,5 @@
+.chat-list {
+    background-color: aliceblue;
+    height: 250px;
+    overflow: auto;
+}

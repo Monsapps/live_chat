@@ -1,0 +1,6 @@
+chatroom-assets:
+  css:
+    theme:
+      css/chatroom-theme.css: {}
+  js:
+    js/chatroom.js: {}

@@ -1,0 +1,45 @@
+<?php
+
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Implements hook_theme().
+ */
+function live_chat_theme($existing, $type, $theme, $path) {
+  return [
+    'chat_room' => [
+        'variables' => [
+            'test_var' => NULL,
+            'form', NULL
+        ],
+    ],
+    'add_message' => [
+        'render element' => 'form',
+    ]
+
+    
+  ];
+}
+
+/* function live_chat_preprocess_page(&$variables) {
+    $variables['page']['#cache']['contexts'][] = 'route';
+    $route = "live_chat.message_add";
+
+    // include chatroom assets only on chat room route
+    if (\Drupal::routeMatch()->getRouteName() === $route) {
+      $variables['#attached']['library'][] = 'live_chat/chatroom-assets';
+    }
+  } */
+
+
+/*function live_chat_menu_links_discovered_alter(&$links) 
+{
+    $links['live_chat.mainroom'] = [
+        'title' => new TranslatableMarkup('Chat'),
+        'route_name' => 'live_chat.mainroom',
+        'description' => new TranslatableMarkup('Let\'s chat together live'),
+        'parent' => 'system.main',
+        'menu_name' => 'main',
+        'class' => Drupal\live_chat\Plugin\Menu\ChatMenuLink::class
+    ];
+}*/

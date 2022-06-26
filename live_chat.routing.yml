@@ -1,0 +1,38 @@
+live_chat.mainroom:
+  path: '/chat'
+  defaults:
+    _form: '\Drupal\live_chat\Form\MessageForm'
+  requirements:
+    _permission: 'view message entity'
+
+live_chat.form_message_add:
+  path: '/chat/messages'
+  methods: [POST]
+  defaults:
+    _controller: '\Drupal\live_chat\Controller\MessageController::addMessage'
+  requirements:
+    _permission: 'add message entity'
+
+live_chat.get_message:
+  path: '/chat/messages'
+  methods: [GET]
+  defaults:
+    _controller: '\Drupal\live_chat\Controller\MessageController::getMessages'
+  requirements:
+    _permission: 'view message entity'
+
+live_chat.admin_settings_form:  
+  path: '/admin/config/system/live-chat'
+  defaults:
+    _form: '\Drupal\live_chat\Form\ChatForm'
+    _title: 'Chat settings'
+  requirements:  
+    _permission: 'administer message entity'
+
+live_chat.admin_rooms_form:
+  path: '/admin/config/system/live-chat/rooms'
+  defaults:
+    _controller: '\Drupal\live_chat\Controller\DefaultController::mainRoom'
+    _title: 'Rooms settings'
+  requirements:
+    _permission: 'administer message entity'

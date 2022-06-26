@@ -1,0 +1,6 @@
+services:
+  Drupal\live_chat\Service\LiveChatService:
+    class: Drupal\live_chat\Service\LiveChatService
+    arguments: ['@config.factory']
+  Drupal\live_chat\Service\MessageService:
+    class: Drupal\live_chat\Service\MessageService

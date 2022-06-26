@@ -1,0 +1,13 @@
+view message entity:
+  title: 'View chat message'
+add message entity:
+  title: 'Add chat message'
+edit message entity:
+  title: 'Edit chat message'
+  restrict access: TRUE
+delete message entity:
+  title: 'Delete chat message'
+  restrict access: TRUE
+administer message entity:
+  title: 'Administer Contact entity'
+  restrict access: TRUE

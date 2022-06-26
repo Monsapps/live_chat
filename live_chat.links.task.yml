@@ -1,0 +1,10 @@
+live_chat.admin_settings_tab:
+  title: Settings
+  route_name: live_chat.admin_settings_form
+  base_route: live_chat.admin_settings_form
+
+# TODO Create private room
+#live_chat.admin_rooms_tab:
+#  title: Rooms
+#  route_name: live_chat.admin_rooms_form
+#  base_route: live_chat.admin_settings_form

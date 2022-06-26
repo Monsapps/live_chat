@@ -1,0 +1,14 @@
+live_chat.chat:
+  title: 'Chat'
+  description: 'Chat live'
+  parent: main
+  menu_name: main
+  route_name: live_chat.mainroom
+  weight: 100
+
+live_chat.admin_settings_form:
+  title: 'Chat settings'
+  description: 'Manage chat etc...'
+  parent: system.admin_config_system
+  route_name: live_chat.admin_settings_form
+  weight: 100
